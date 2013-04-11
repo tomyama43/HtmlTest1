@@ -1,15 +1,18 @@
-var _callbacks, _dynoIndex, _win, _container, _buttonList = [];
+var _callbacks, _dynoIndex, _win, _container, _buttonList, _baseSeq = [];
 var _cnt;
 var nextButton;
 
-function AnswerWindow(callback, dynoIndex, cnt) {
+function AnswerWindow(callback, dynoIndex, cnt, baseSeq) {
 	_callbacks = callback;
 	_dynoIndex = dynoIndex;
+	_baseSeq = baseSeq;
 	_cnt = cnt;
 	
 	var dynoList = require('/data/data').data.dynos;
 	var q_num = dynoList.length; //問題数
-	var useDyno = dynoList[_dynoIndex];
+	//var useDyno = dynoList[_dynoIndex];
+	var _questionNo = _baseSeq[_dynoIndex];
+	var useDyno = dynoList[_questionNo];
 	
 	var winWidth = Ti.Platform.displayCaps.platformWidth;
 	if(winWidth > 728){
@@ -170,7 +173,7 @@ function AnswerWindow(callback, dynoIndex, cnt) {
 
 function _nextButtonClickHandler(e) {
 	nextButton.backgroundColor='#666';
-	_callbacks.next(_dynoIndex, _cnt);
+	_callbacks.next(_dynoIndex, _cnt, _baseSeq);
 }
 
 module.exports = AnswerWindow;

@@ -1,19 +1,25 @@
-var _callbacks, _dynoIndex, _win, _container, _buttonList;
-var cnt = 0;
+var _callbacks, _dynoIndex, _win, _container, _buttonList, _cnt, _baseSeq, _questionNo;
+var cnt;
 var button0, button1, button2;
+var baseSeq;
 
-function QuizWindow(callback, dynoIndex) {
+function QuizWindow(callback, dynoIndex, cnt, baseSeq) {
 	_callbacks = callback;
-	_dynoIndex = dynoIndex;
-	_buttonList = []
+	_dynoIndex = dynoIndex; //現在の問題数
+	_buttonList = [];
+	_cnt = cnt; //正解数
+	_baseSeq = baseSeq; //出題順の配列
 	
-	var dynoList = require('/data/data').data.dynos;
-	var useDyno = dynoList[_dynoIndex];
+	_questionNo = _baseSeq[_dynoIndex]; //問題番号の取得
 	
+	var dynoList = require('/data/data').data.dynos; //問題文の配列を取得
+	//var useDyno = dynoList[_dynoIndex];
+	var useDyno = dynoList[_questionNo]; //問題文の配列から、指定の問題を取得
+	/*
 	if(_dynoIndex == 0){
 		cnt = 0;
 	}
-	
+	*/
 	var winWidth = Ti.Platform.displayCaps.platformWidth;
 	if(winWidth > 728){
 		winWidth = 728;
@@ -87,14 +93,16 @@ function QuizWindow(callback, dynoIndex) {
 	for (var i = 0; i < 3; i++) {
 		while (true) {
 			candidateIndex = Math.floor(Math.random() * dynoList.length);
-			if (candidateIndexList.indexOf(candidateIndex) === -1 && candidateIndex !== _dynoIndex) {
+			// if (candidateIndexList.indexOf(candidateIndex) === -1 && candidateIndex !== _dynoIndex) {
+			if (candidateIndexList.indexOf(candidateIndex) === -1 && candidateIndex !== _questionNo) {	
 				candidateIndexList.push(candidateIndex);
 				break;
 			}
 		}
 	}
 	
-	candidateIndexList[Math.floor(Math.random() * candidateIndexList.length)] = _dynoIndex;
+	// candidateIndexList[Math.floor(Math.random() * candidateIndexList.length)] = _dynoIndex;
+	candidateIndexList[Math.floor(Math.random() * candidateIndexList.length)] = _questionNo;
 	/*
 	var button;
 	for (var i = 0; i < candidateIndexList.length; i++) {
@@ -239,10 +247,11 @@ function _buttonClickHandler(e) {
 */
 function _buttonClickHandler0(e) {
 	var dynoList = require('/data/data').data.dynos;
-	var correct = dynoList[_dynoIndex].name;
+	//var correct = dynoList[_dynoIndex].name;
+	var correct = dynoList[_questionNo].name;
 	var imageFile, imageView;
 	if(correct === _buttonList[0].title) {
-		cnt++;
+		_cnt++;
 		//正解だったら、バイブレーター起動
     	onVibrater();
 	}
@@ -264,15 +273,17 @@ function _buttonClickHandler0(e) {
 	}
 	button0.backgroundColor='#666';
 	
-	_callbacks.answer(_dynoIndex, cnt);
+	// _callbacks.answer(_dynoIndex, cnt, );
+	_callbacks.answer(_dynoIndex, _cnt, _baseSeq);
 }
 
 function _buttonClickHandler1(e) {
 	var dynoList = require('/data/data').data.dynos;
-	var correct = dynoList[_dynoIndex].name;
+	//var correct = dynoList[_dynoIndex].name;
+	var correct = dynoList[_questionNo].name;
 	var imageFile, imageView;
 	if(correct === _buttonList[1].title) {
-		cnt++;
+		_cnt++;
 		//正解だったら、バイブレーター起動
     	onVibrater();
 	}
@@ -294,15 +305,17 @@ function _buttonClickHandler1(e) {
 	}
 	button1.backgroundColor='#666';
 	
-	_callbacks.answer(_dynoIndex, cnt);
+	// _callbacks.answer(_dynoIndex, cnt, );
+	_callbacks.answer(_dynoIndex, _cnt, _baseSeq);
 }
 
 function _buttonClickHandler2(e) {
 	var dynoList = require('/data/data').data.dynos;
-	var correct = dynoList[_dynoIndex].name;
+	//var correct = dynoList[_dynoIndex].name;
+	var correct = dynoList[_questionNo].name;
 	var imageFile, imageView;
 	if(correct === _buttonList[2].title) {
-		cnt++;
+		_cnt++;
 		//正解だったら、バイブレーター起動
     	onVibrater();
 	}
@@ -324,7 +337,8 @@ function _buttonClickHandler2(e) {
 	}
 	button2.backgroundColor='#666';
 	
-	_callbacks.answer(_dynoIndex, cnt);
+	// _callbacks.answer(_dynoIndex, cnt, );
+	_callbacks.answer(_dynoIndex, _cnt, _baseSeq);
 }
 
 function onVibrater(){
