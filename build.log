@@ -1,171 +1,29 @@
 Logfile initialized
 [INFO] logfile = C:\Titaniumworkspace\HtmlTest1\build.log
-[DEBUG] C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\builder.py install HtmlTest1 C:\Users\jumbo\Android\android-sdk C:\Titaniumworkspace\HtmlTest1 com.test.htmltest1 12
+[DEBUG] C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\builder.py simulator HtmlTest1 C:\Users\jumbo\Android\android-sdk C:\Titaniumworkspace\HtmlTest1 com.test.htmltest1 12 QVGA
+[INFO] Building HtmlTest1 for Android ... one moment
 [INFO] Titanium SDK version: 3.0.2 (02/15/13 19:02 5a77fe7)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.013000 seconds on emulator to get ready
+[DEBUG] waited 0.014000 seconds on emulator to get ready
 [DEBUG] com.test.htmltest1 installed? False
+[INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
-[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\AnswerWindow.android.high.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\AnswerWindow.android.high.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\AnswerWindow.android.low.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\AnswerWindow.android.low.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\AnswerWindow.android.medium.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\AnswerWindow.android.medium.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\appicon.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\appicon.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\default.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\default.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\QuizWindow.android.high.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\QuizWindow.android.high.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\QuizWindow.android.low.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\QuizWindow.android.low.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\QuizWindow.android.medium.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\QuizWindow.android.medium.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\ResultWindow.android.high.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\ResultWindow.android.high.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\ResultWindow.android.low.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\ResultWindow.android.low.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\android\ResultWindow.android.medium.jss => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\ResultWindow.android.medium.jss
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\app\globals.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\app\globals.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\app\main.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\app\main.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\app\views\AnswerWindow.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\app\views\AnswerWindow.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\app\views\QuizWindow.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\app\views\QuizWindow.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\app\views\ResultWindow.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\app\views\ResultWindow.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\app\views\StartWindow.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\app\views\StartWindow.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\app.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\app.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\data.js => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\data.js
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\d1.jpg => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\d1.jpg
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\d2.jpg => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\d2.jpg
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\d3.jpg => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\d3.jpg
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\d4.jpg => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\d4.jpg
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\d5.jpg => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\d5.jpg
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\d6.jpg => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\d6.jpg
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\m1.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\m1.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\m2.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\m2.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\m3.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\m3.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\m4.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\m4.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\m5.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\m5.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\images\m6.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\images\m6.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\data\LICENSE.txt => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\data\LICENSE.txt
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\images\ng.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\images\ng.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\images\ok.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\images\ok.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\images\top.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\images\top.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\KS_nav_ui.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\KS_nav_ui.png
-[TRACE] COPYING CREATED FILE: C:\Titaniumworkspace\HtmlTest1\Resources\KS_nav_views.png => C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\KS_nav_views.png
-[TRACE] Generating Java Classes
+[INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
-[DEBUG] app stylesheet => C:\Titaniumworkspace\HtmlTest1\build\android\gen\com\test\htmltest1\ApplicationStylesheet.java
 [DEBUG] copying app icon: C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\appicon.png
-[DEBUG] generating theme.xml
-[DEBUG] found drawable-long-land-hdpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-land-hdpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-land-hdpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-long-land-hdpi\background.png
-[DEBUG] found drawable-long-land-ldpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-land-ldpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-land-ldpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-long-land-ldpi\background.png
-[DEBUG] found drawable-long-port-hdpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-port-hdpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-port-hdpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-long-port-hdpi\background.png
-[DEBUG] found drawable-long-port-ldpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-port-ldpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-long-port-ldpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-long-port-ldpi\background.png
-[DEBUG] found drawable-notlong-land-hdpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-land-hdpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-notlong-land-hdpi\background.png
-[DEBUG] found drawable-notlong-land-ldpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-land-ldpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-notlong-land-ldpi\background.png
-[DEBUG] found drawable-notlong-land-mdpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-land-mdpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-notlong-land-mdpi\background.png
-[DEBUG] found drawable-notlong-port-hdpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-port-hdpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-notlong-port-hdpi\background.png
-[DEBUG] found drawable-notlong-port-ldpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-port-ldpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-notlong-port-ldpi\background.png
-[DEBUG] found drawable-notlong-port-mdpi splash screen at C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-port-mdpi\default.png
-[DEBUG] copying C:\Titaniumworkspace\HtmlTest1\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to C:\Titaniumworkspace\HtmlTest1\build\android\res\drawable-notlong-port-mdpi\background.png
-[DEBUG] found splash screen at C:\Titaniumworkspace\HtmlTest1\build\android\bin\assets\Resources\default.png
-[TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding C:\Titaniumworkspace\HtmlTest1\build\android\gen\com\test\htmltest1\ApplicationStylesheet.java to javac build list
-[DEBUG] adding C:\Titaniumworkspace\HtmlTest1\build\android\gen\com\test\htmltest1\Htmltest1Activity.java to javac build list
-[DEBUG] adding C:\Titaniumworkspace\HtmlTest1\build\android\gen\com\test\htmltest1\Htmltest1AppInfo.java to javac build list
-[DEBUG] adding C:\Titaniumworkspace\HtmlTest1\build\android\gen\com\test\htmltest1\Htmltest1Application.java to javac build list
-[DEBUG] adding C:\Titaniumworkspace\HtmlTest1\build\android\gen\com\test\htmltest1\R.java to javac build list
-[DEBUG] Building Java Sources: "C:\\Titaniumworkspace\\HtmlTest1\\build\\android\\gen\\com\\test\\htmltest1\\ApplicationStylesheet.java" "C:\\Titaniumworkspace\\HtmlTest1\\build\\android\\gen\\com\\test\\htmltest1\\Htmltest1Activity.java" "C:\\Titaniumworkspace\\HtmlTest1\\build\\android\\gen\\com\\test\\htmltest1\\Htmltest1AppInfo.java" "C:\\Titaniumworkspace\\HtmlTest1\\build\\android\\gen\\com\\test\\htmltest1\\Htmltest1Application.java" "C:\\Titaniumworkspace\\HtmlTest1\\build\\android\\gen\\com\\test\\htmltest1\\R.java"
-[INFO] Compiling Android Resources... This could take some time
-[DEBUG] Android classes.dex built
-[DEBUG] creating unsigned apk: C:\Titaniumworkspace\HtmlTest1\build\android\bin\app-unsigned.apk
-[DEBUG] from resource zip => assets/Resources/app/views/AnswerWindow.js
-[DEBUG] from resource zip => assets/Resources/app/views/QuizWindow.js
-[DEBUG] from resource zip => assets/Resources/app/views/ResultWindow.js
-[DEBUG] from resource zip => assets/Resources/app/views/StartWindow.js
-[DEBUG] from resource zip => assets/Resources/app/globals.js
-[DEBUG] from resource zip => assets/Resources/app/main.js
-[DEBUG] from resource zip => assets/Resources/data/images/d1.jpg
-[DEBUG] from resource zip => assets/Resources/data/images/d2.jpg
-[DEBUG] from resource zip => assets/Resources/data/images/d3.jpg
-[DEBUG] from resource zip => assets/Resources/data/images/d4.jpg
-[DEBUG] from resource zip => assets/Resources/data/images/d5.jpg
-[DEBUG] from resource zip => assets/Resources/data/images/d6.jpg
-[DEBUG] from resource zip => assets/Resources/data/images/m1.png
-[DEBUG] from resource zip => assets/Resources/data/images/m2.png
-[DEBUG] from resource zip => assets/Resources/data/images/m3.png
-[DEBUG] from resource zip => assets/Resources/data/images/m4.png
-[DEBUG] from resource zip => assets/Resources/data/images/m5.png
-[DEBUG] from resource zip => assets/Resources/data/images/m6.png
-[DEBUG] from resource zip => assets/Resources/data/LICENSE.txt
-[DEBUG] from resource zip => assets/Resources/data/data.js
-[DEBUG] from resource zip => assets/Resources/images/ng.png
-[DEBUG] from resource zip => assets/Resources/images/ok.png
-[DEBUG] from resource zip => assets/Resources/images/top.png
-[DEBUG] from resource zip => assets/Resources/AnswerWindow.android.high.jss
-[DEBUG] from resource zip => assets/Resources/AnswerWindow.android.low.jss
-[DEBUG] from resource zip => assets/Resources/AnswerWindow.android.medium.jss
-[DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
-[DEBUG] from resource zip => assets/Resources/KS_nav_views.png
-[DEBUG] from resource zip => assets/Resources/QuizWindow.android.high.jss
-[DEBUG] from resource zip => assets/Resources/QuizWindow.android.low.jss
-[DEBUG] from resource zip => assets/Resources/QuizWindow.android.medium.jss
-[DEBUG] from resource zip => assets/Resources/ResultWindow.android.high.jss
-[DEBUG] from resource zip => assets/Resources/ResultWindow.android.low.jss
-[DEBUG] from resource zip => assets/Resources/ResultWindow.android.medium.jss
-[DEBUG] from resource zip => assets/Resources/app.js
-[DEBUG] from resource zip => assets/Resources/appicon.png
-[DEBUG] from resource zip => assets/Resources/default.png
-[DEBUG] from resource zip => assets/Resources/ti.cloud.js
-[DEBUG] from resource zip => assets/app.json
-[DEBUG] from resource zip => assets/index.json
-[DEBUG] from resource zip => assets/tiapp.xml
-[DEBUG] from resource zip => res/drawable/appicon.png
-[DEBUG] from resource zip => res/drawable/background.png
-[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
-[DEBUG] from resource zip => AndroidManifest.xml
-[DEBUG] from resource zip => resources.arsc
-[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/build.properties
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_64.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_64.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
-[DEBUG] from JAR C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
-[DEBUG] installing native SDK libs
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.016000 seconds on emulator to get ready
-[INFO] Installing application on device
-[INFO] Application installed. Launch from drawer on Home Screen
+[ERROR] Exception occured while building Android project:
+[ERROR] Traceback (most recent call last):
+[ERROR]   File "C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\builder.py", line 2392, in <module>
+[ERROR]     builder.build_and_run(False, avd_id, debugger_host=debugger_host)
+[ERROR]   File "C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\builder.py", line 2141, in build_and_run
+[ERROR]     self.manifest_changed = self.generate_android_manifest(compiler)
+[ERROR]   File "C:\Users\jumbo\AppData\Roaming\Titanium\mobilesdk\win32\3.0.2.GA\android\builder.py", line 1063, in generate_android_manifest
+[ERROR]     shutil.copy(icon_path, dest_icon)
+[ERROR]   File "C:\Titanium Studio\plugins\com.appcelerator.titanium.python.win32_1.0.0.1338515509\python\lib\shutil.py", line 116, in copy
+[ERROR]     copyfile(src, dst)
+[ERROR]   File "C:\Titanium Studio\plugins\com.appcelerator.titanium.python.win32_1.0.0.1338515509\python\lib\shutil.py", line 81, in copyfile
+[ERROR]     with open(src, 'rb') as fsrc:
+[ERROR] IOError: [Errno 2] No such file or directory: u'C:\\Titaniumworkspace\\HtmlTest1\\build\\android\\bin\\assets\\Resources\\appicon.png'

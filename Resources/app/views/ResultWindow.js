@@ -1,6 +1,6 @@
 var _callbacks, _dynoIndex, _win, _container, _buttonList = [];
 var _cnt;
-var nextButton;
+var nextButton, fbButton;
 
 //function ResultWindow(callback, dynoIndex) {
 function ResultWindow(callback, dynoIndex, cnt) {
@@ -93,6 +93,13 @@ function ResultWindow(callback, dynoIndex, cnt) {
 	});
 	nextButton.addEventListener('click', _nextButtonClickHandler);
 	_container.add(nextButton);
+	
+	Ti.Facebook.appid = '365516906890628';
+	Ti.Facebook.permissions = ['publish_stream'];
+	
+	fbButton = Ti.Facebook.createLoginButton();
+	_container.add(fbButton);
+	
 
 	_win.add(_container);
 	return _win;
