@@ -100,6 +100,31 @@ function ResultWindow(callback, dynoIndex, cnt) {
 	fbButton = Ti.Facebook.createLoginButton();
 	_container.add(fbButton);
 	
+	fbPostButton = Ti.UI.createButton({
+		title: 'facebookへ投稿',
+		width: '90%',
+		height: '50dp',
+		top: '10dp',
+		bottom: '10dp',
+		
+//		style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+		borderRadius:6,
+		/*
+		backgroundGradient:{
+			type:'linear',
+			colors:['#444','#555'],
+			startPoint:{x:0,y:0},
+			endPoint:{x:2,y:50},
+			backFillStart:false
+		},
+		*/
+		backgroundColor:'#aaa',
+		borderWidth:1,
+		borderColor:'#666'
+	});
+	
+	fbPostButton.addEventListener('click', _fbPostButtonClickHandler);
+	_container.add(fbPostButton);
 
 	_win.add(_container);
 	return _win;
@@ -110,4 +135,19 @@ function _nextButtonClickHandler(e) {
 	_callbacks.result();
 }
 
+function _fbPostButtonClickHandler(e) {
+	fbPostButton.backgroundColor='#666';
+	Ti.Facebook.requestWithGraphPath(
+		'me/feed',
+		{
+			message: "HtmlTest1からPOSTしてみました"
+		},
+		"POST",
+		function(e){
+			if(e.success){
+				alert("Success" + e.result);
+			}
+		}
+	);
+}
 module.exports = ResultWindow;
